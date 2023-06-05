@@ -4,6 +4,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from db.models import Hotel
+from db.models import Customer
+from db.models import Review
 
 if __name__ == '__main__':
     
@@ -11,7 +13,7 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    ipdb.set_trace()
+    # ipdb.set_trace()
 
     # Create
     # hotel = Hotel(name="The Chanler at Cliff Walk")
@@ -36,5 +38,5 @@ if __name__ == '__main__':
     # session.commit()
 
     # Delete all hotels from the hotels table
-    # hotels = session.query(Hotel).delete()
+    # hotels = session.query(Review).delete()
     # session.commit()
