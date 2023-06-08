@@ -16,10 +16,9 @@ In today's lecture, we will discuss about SQLAlchemy, Alembic, and SQLAlchemy As
 2. Make sure that you are in the correct directory (folder) that contains a `Pipfile`, then run `pipenv install` in your terminal to install the required libraries.
 3. Now that your `pipenv` virtual environment is ready to use, enter `pipenv shell` to enter the virtual environment.
 4. Enter the command `cd lib/db` in the terminal to move into the db directory.
-5. Enter the command `python cli.py` in the terminal to start running my Python CLI.
-6. Run `alembic init migrations` to set up Alembic.
-7. Modify line 63 in `alembic.ini`, where it says `sqlalchemy.url = driver://user:pass@localhost/dbname`, to `sqlalchemy.url = sqlite:///hotels.db`
-8. Replace line 21 in `migrations/env.py`, where it says `target_metadata = None`, with the following:
+5. Run `alembic init migrations` to set up Alembic.
+6. Modify line 63 in `alembic.ini`, where it says `sqlalchemy.url = driver://user:pass@localhost/dbname`, to `sqlalchemy.url = sqlite:///hotels.db`
+7. Replace line 21 in `migrations/env.py`, where it says `target_metadata = None`, with the following:
 
 ```py
 from models import Base
