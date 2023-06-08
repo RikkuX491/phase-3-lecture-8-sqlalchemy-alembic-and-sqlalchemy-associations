@@ -13,7 +13,7 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    # ipdb.set_trace()
+    ipdb.set_trace()
 
     # Create
     # hotel = Hotel(name="The Chanler at Cliff Walk")
@@ -21,8 +21,8 @@ if __name__ == '__main__':
     # session.commit()
 
     # Read
-    # hotels = session.query(Hotel)
-    # print(f"There are {hotels.count()} hotels available!")
+    # hotels = session.query(Hotel).all()
+    # print(f"There are {len(hotels)} hotels available!")
     # print("Here is the info of all available hotels:")
     # for hotel in hotels:
     #     print(hotel)
@@ -38,5 +38,5 @@ if __name__ == '__main__':
     # session.commit()
 
     # Delete all hotels from the hotels table
-    # hotels = session.query(Review).delete()
+    # hotels = session.query(Hotel).delete()
     # session.commit()

@@ -6,7 +6,6 @@ from models import Customer
 from models import Review
 
 if __name__ == '__main__':
-    pass
     
     engine = create_engine('sqlite:///hotels.db')
     Session = sessionmaker(bind=engine)
